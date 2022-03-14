@@ -1,0 +1,971 @@
+* 
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+
+/* Header */
+
+.header 
+	width: 100%
+
+	.communication
+		width: 100%
+		height: 40px
+
+		background-color: #eee
+
+		display: flex
+		justify-content: center
+
+		.wrepper
+			width: 1150px
+			height: 40px
+			padding: 0 15px
+
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			color: #e67e22
+			font: 12px "Open Sans", sans-serif
+
+			.telephone, .mail
+				margin-top: 5px
+				margin-right: 15px
+
+				display: flex
+				align-items: center
+
+				img
+					margin-right: 3px
+
+	
+	.main
+		height: 110px
+		width: 100%
+		max-width: 1150px
+		margin: 0 auto
+
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		.name_group
+			margin-top: 10px
+
+			font: 52px "Open Sans", Arial, Helvetice Neue, sans-serif
+			color: #777
+			font-weight: 300
+
+			:hover
+						cursor: pointer
+		
+		.nav 
+			margin-top: 10px
+			height: 38px
+			display: flex
+
+			a
+				height: 20px
+				padding: 9px 20px
+				
+				font: 12px "Open Sans", Arial, Helvetice Neue, sans-serif
+				color: #777
+				font-weight: 300
+				text-transform: uppercase
+				line-height: 20px
+			
+			a:hover
+				background-color: #ff7600
+				color: #fff
+
+			a.active 
+				background-color: #ff7600
+				color: #fff
+
+			
+		
+/* Welcome */
+
+.welcome
+	width: 100%
+	height: 500px
+
+	background-image: url(../images/templatemo_carousel_bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	background-attachment: fixed
+
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+
+		
+	.welcomeurb
+		width: 100%
+		max-width: 60%
+		margin-top: 80px 
+
+		color: #fff
+
+		display: flex
+		flex-direction: column
+
+		h1
+			text-align: center
+			font: 36px "Open Sans", Arial, Helvetice Neue, sans-serif
+			text-transform: uppercase
+			margin: 20px 0 10px
+
+		h3
+			text-align: center
+			font: 21px "Open Sans", Arial, Helvetice Neue, sans-serif
+			text-transform: uppercase
+			margin-bottom: 20px
+
+		.button
+			margin: 25px 0
+
+			display: flex
+			justify-content: center
+			align-items: center
+
+			a 
+				height: 23px
+				font: 18px "Open Sans", Arial, Helvetice Neue, sans-serif
+				color: #fff
+
+				padding: 10px 16px
+			
+			.but_green
+				background-color: #2ecc71
+				border: 1px solid #2ecc71
+				border-bottom: 2px solid #27ae60
+
+				margin-right: 24px
+
+			.but_green:hover 
+					background-color: #27ae60
+					border: 1px solid #27ae60
+					border-bottom: 2px solid #27ae60
+
+			.but_orange
+				background-color: #ff7600
+				border: 1px solid #ff7600
+				border-bottom: 2px solid #d35400
+
+			.but_orange:hover 
+					background-color: #d35400
+					border: 1px solid #d35400
+					border-bottom: 2px solid #d35400
+
+		.boxs
+			display: flex
+			justify-content: center
+
+			list-style: none
+
+			margin-top: 130px
+
+			li
+				width: 8px
+				height: 8px
+				margin: 0 3px
+				border: 1px solid #fff
+
+			li:hover
+					cursor: pointer
+
+			li.active
+				background-color: #fff
+				transform: scale(1.2)
+
+	sidebar
+		width: 100%
+		height: 100%
+		max-width: 15%
+		border: 1px solid blue
+		box-sizing: border-box
+
+
+
+/* Welcome to Design */
+
+.welcome_design
+	width: 100%
+	margin-bottom: 150px
+	position: relative
+
+	.text_design
+		height: 200px
+		width: 100%
+		max-width: 1150px
+		margin: 0 auto 
+
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		
+		h1 
+			font: 42px "Open Sans", Arial, Helvetice Neue, sans-serif
+			color: #333
+			margin-bottom: 10px
+
+			.h1_design
+				color: #e67e22
+
+		.paragraph
+			font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+			color: #929292
+			font-style: italic
+
+	.text_design::after
+		content: ""
+		display: block
+		position: absolute
+		top: 230px
+		width: 100%
+		height: 1px
+		background-color: lightgray
+
+	.more
+		display: flex
+		align-items: center
+		
+		margin: 0 auto
+		margin-top: 130px
+
+		width: 100%
+		max-width: 1150px
+
+		.block_more
+			width: 32%
+			margin: 0 1.25%
+
+			.img-h1
+				text-transform: uppercase
+				font: 20px "Open Sans", Arial, Helvetice Neue, sans-serif
+				color: #333
+				font-weight: bold
+
+				margin-bottom: 30px
+
+				display: flex
+				align-items: center
+
+				span 
+					margin-left: 15px
+
+			.text-but
+				width: 100%
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				
+				p 
+					font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+					color: #929292
+					width: 100%
+					text-align: justify
+					line-height: 1.428571429
+					margin-bottom: 5px
+	
+				.text_a
+					color: #428bca
+
+				.text_a:hover
+					text-decoration: underline
+
+				a:not(.text_a) 
+					background-color: #ff7600
+					border: 1px solid #ff7600
+					border-bottom: 2px solid #d35400
+					font: 14px "Open Sans", sans-serif
+					text-transform: uppercase
+					color: #fff
+					padding: 8px 12px
+
+				a:not(.text_a):hover 
+					background-color: #d35400
+					border: 1px solid #d35400
+					border-bottom: 2px solid #d35400
+
+
+
+
+/* Our Team */
+
+.our_team
+	width: 100%
+	height: 480px
+	margin-bottom: 110px
+	background-image: url(../images/background.png)
+	padding-top: 110px
+
+	.top 
+		width: 100%
+		max-width: 1150px
+		.line
+			background-color: #fff
+		.text_team
+			color: #fff
+
+	.team_preview
+		margin: 80px auto 0
+		padding: 0 1%
+
+		width: 100%
+		max-width: 1138.5px
+		
+		display: flex
+		justify-content: space-between
+
+		.photo-text
+			width: 23%
+			position: relative
+
+			.contein
+				width: 100%
+				position: relative
+				display: inline-block
+
+				.rast
+					margin-top: 100%
+
+				.face
+					width: 100%
+					position: absolute
+					top: 0
+					left: 0
+					bottom: 0
+					right: 0
+
+				.info_team:hover
+					opacity: 1
+
+				.info_team
+					width: 100%
+					position: absolute
+					top: 0
+					left: 0
+					bottom: 0
+					right: 0
+					opacity: 0
+					transition: opacity .3s linear
+					background-color: rgba(220, 157, 102, 0.8)
+					display: flex
+					justify-content: center
+					align-items: center
+
+					.info_icon
+						margin: 0 auto
+						display: flex
+						justify-content: center
+
+						a
+							width: 41px
+							height: 41px
+							display: block
+							margin: 0 3px
+						.fb
+							background-image: url(../images/social-icon-fb.png)
+							background-position: -1px
+						.fb:hover
+							background-image: url(../images/social-icon-fb-over.png)
+
+						.twit
+							background-image: url(../images/social-icon-twitter.png)
+						.twit:hover
+							background-image: url(../images/social-icon-twitter-over.png)
+
+						.in
+							background-image: url(../images/social-icon-linkedin.png)
+							background-position: 0 -1px
+						.in:hover
+							background-image: url(../images/social-icon-linkedin-over.png)
+
+				
+			.text 
+				display: flex
+				flex-direction: column
+
+				h1, p
+					text-align: center
+					color: #fff
+					margin-top: 7px
+
+				h1
+					margin-bottom: 7px
+					font: 16px "Open Sans", sans-serif
+					text-transform: uppercase
+					font-weight: bold
+				p 
+					font: 12px "Open Sans", Arial, Helvetice Neue, sans-serif
+
+
+
+/* Our Portfolio */
+
+.our_portfolio
+	width: 100%
+
+	.photo_beautiful
+		width: 100%
+		max-width: 1150px
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		flex-direction: column
+
+		.razdel
+			width: 100%
+			max-width: 1150px
+			text-align: center
+			margin: 95px auto 20px
+			font: 16px "Open Sans", Arial, Helvetice Neue, sans-serif
+			display: inline-block
+
+			span, a
+				color: #333
+
+			span
+				margin: 0 0 0 5px
+
+			a.active, a:hover
+				color: #e67e22
+		
+		.photos
+			width: 100%
+			max-width: 1150px
+			margin: 10px auto 0 
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+
+			.photo_block
+				width: 200px
+				height: 200px
+				margin: 20px 10px
+				background-repeat: no-repeat
+			
+			.tea
+				background-image: url(../images/gallery-image-1.jpg)
+				background-size: cover
+
+			.breakfast
+				background-image: url(../images/gallery-image-2.jpg)
+				background-size: cover
+
+			.green
+				background-image: url(../images/gallery-image-3.jpg)
+				background-size: cover
+
+			.camera
+				background-image: url(../images/gallery-image-4.jpg)
+				background-size: cover
+
+			.plant
+				background-image: url(../images/gallery-image-5.jpg)
+				background-size: cover
+
+			.train
+				background-image: url(../images/gallery-image-6.jpg)
+				background-size: cover
+
+			.city
+				background-image: url(../images/gallery-image-7.jpg)
+				background-size: cover
+
+			.birds
+				background-image: url(../images/gallery-image-8.jpg)
+				background-size: cover
+
+			.nature
+				background-image: url(../images/gallery-image-9.jpg)
+				background-size: 100% 
+
+			.doggy
+				background-image: url(../images/gallery-image-10.jpg)
+				background-size: cover
+			
+			.photo_hover
+				width: 100%
+				height: 100%
+				border: 2px solid #ff7600
+				box-sizing: border-box
+				opacity: 0
+				transition: opacity .2s linear
+				position: relative
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+
+				.dark
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					background-color: #000
+					opacity: 0.8
+					z-index: 0
+				
+				h3
+					font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+					color: #fff
+					z-index: 1000
+
+				.line-center
+					width: 70%
+					height: 1px
+					margin: 20px auto
+					background-color: #fff
+					z-index: 1000
+
+
+				h1 
+					font: 18px "Open Sans", Arial, Helvetice Neue, sans-serif
+					text-transform: uppercase
+					color: #fff
+					z-index: 1000
+					margin-bottom: 20px
+
+			.photo_hover:hover
+				cursor: pointer
+				opacity: 1
+
+		.load_more 
+			display: block
+			margin: 30px auto
+			padding: 10px 16px
+			color: #fff
+			text-transform: uppercase
+			font: 18px "Open Sans", Arial, Helvetice Neue, sans-serif
+
+			background-color: #ff7600
+			border: 1px solid #ff7600
+			border-bottom: 2px solid #d35400
+
+		.load_more:hover 
+			background-color: #d35400
+			border: 1px solid #d35400
+			border-bottom: 2px solid #d35400
+
+
+
+/* Blog Post */
+
+.blog_post
+	width: 100%
+	margin-top: 60px
+	margin-bottom: 220px
+	position: relative
+
+	.top
+		width: 100%
+		max-width: 1150px
+		.line
+			width: 40%
+		.right_line
+			margin-right: 4%
+		.text_team
+			width: 15.5%
+	
+	.post::after
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		bottom: -110px
+		width: 100%
+		height: 1px
+		background-color: lightgray
+
+	.post
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 1fr 1fr
+		grid-gap: 25px
+
+		padding: 0 0.5%
+		width: 100%
+		max-width: 1150px
+		margin: 100px auto 0 
+	
+		.post-img
+			display: grid
+			grid-template-columns: 1fr 2fr
+			grid-template-rows: 1fr
+
+			img
+				float: left
+				margin-right: 40px
+
+			.post_text
+				padding-top: 3px
+				display: grid
+				grid-template-rows: 1.5fr 2.5fr
+				grid-template-columns: 1fr
+
+				p 
+					font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+					color: #333
+					width: 100%
+					text-align: justify
+					line-height: 1.428571429
+					margin-bottom: 5px
+
+				.h-but
+					width: 100%
+					display: flex
+					justify-content: space-between
+
+					h1 
+						font: 16px "Open Sans", Arial, Helvetice Neue, sans-serif
+						text-transform: uppercase
+						font-weight: bold
+						color: #333
+
+					p 
+						font: 12px "Open Sans", Arial, Helvetice Neue, sans-serif
+						color: #333
+						span 
+							color: #e67e22
+
+					.but_orange
+						display: block
+						padding: 8px 12px
+						color: #fff
+						font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+
+						background-color: #ff7600
+						border: 1px solid #ff7600
+						border-bottom: 2px solid #d35400
+
+					.but_orange:hover 
+						background-color: #d35400
+						border: 1px solid #d35400
+						border-bottom: 2px solid #d35400
+
+
+
+/* Contact */
+
+.contact
+	width: 100%
+
+	.top
+		width: 100%
+		max-width: 1150px
+		.line
+			width: 40%
+		.right_line
+			margin-right: 4%
+		.text_team
+			width: 15.5%
+
+	.call
+		width: 100%
+		max-width: 1150px
+		margin: 50px auto 0
+		display: grid
+		grid-template-columns: 2fr 1fr
+
+		.map
+			padding-right: 15px
+			padding-left: 0.5%
+
+			.map_canvas
+				width: 100%
+				height: 378px
+
+			.map-adress
+				color: #333
+				font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+				margin: 15px 0
+				font-style: italic
+
+				span
+					color: #e67e22
+
+		.call_form
+			padding: 0 15px
+			font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+			color: #333
+
+			p
+				margin-bottom: 10px
+				line-height: 1.428571429
+
+			.num-phone
+				padding-left: 2px
+				img
+					margin-right: 5px
+
+			div
+				margin-bottom: 10px
+				display: flex 
+				align-items: center
+
+				img
+					margin-right: 7px
+
+				a 
+					color: #e67e22
+
+			input, textarea
+				width: 95%
+				margin-bottom: 15px
+				padding: 8px 12px
+
+				color: #555
+				font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+				font-style: italic
+				border: 1px solid #ccc
+				border-radius: 0
+
+			input:focus, textarea:focus
+				box-shadow: 0 0 20px -9px #1351B4
+				border-radius: 0
+
+			textarea
+				height: 115px
+				margin-bottom: 13px
+
+			input::placeholder , textarea::placeholder
+				color: #ccc
+
+			.but_orange
+				float: right
+				padding: 8px 12px
+				color: #fff
+				font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+				text-transform: uppercase
+				margin-right: 8px
+
+				background-color: #ff7600
+				border: 1px solid #ff7600
+				border-bottom: 2px solid #d35400
+
+			.but_orange:hover 
+				background-color: #d35400
+				border: 1px solid #d35400
+				border-bottom: 2px solid #d35400
+
+	.footer_contact
+		width: 100%
+		height: 200px
+		margin-top: 100px
+		background-color: #8996a0
+		font: 20px 'Open Sans', sans-serif
+		color: #fff
+		border-bottom: 2px solid lightgray
+		margin-bottom: 50px
+
+		.contein_foot
+			width: 100%
+			max-width: 1150px
+			margin: 0 auto
+			padding-left: 100px
+			display: flex
+			height: 100%
+
+			.numone	
+				width: 20%
+				padding-top: 20px 
+
+				img 
+					float: right
+
+			.vertical_line
+				width: 2px
+				background-color: #fff
+				height: 80%
+				margin: auto 15px auto 5px
+
+			.numtwo
+				width: 56.5%
+				padding-top: 20px
+				line-height: 1.428571429
+
+				.who_where
+					color: #ffff33
+					font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+					float: right
+
+
+
+
+/* Partners */
+
+.partners
+	width: 100%
+	position: relative
+
+	.top
+		margin-top: 100px
+
+	.partners_img
+		width: 100%
+		max-width: 1150px
+		display: flex
+		justify-content: space-between
+		margin: 70px auto
+		box-sizing: border-box
+		img 
+			width: 100%
+
+	.partners_img:after
+		content: ""
+		display: block
+		width: 100%
+		height: 2px
+		background-color: #ccc
+		position: absolute
+		bottom: -100px
+		left: 0
+
+
+
+/* Footer */
+
+.footer
+	width: 100%
+	margin-top: 160px
+
+	.footer_nav
+		width: 100%
+		display: flex
+		justify-content: center
+		margin-bottom: 40px
+
+		a
+			width: 42px 
+			height: 42px
+			display: block
+			background-size: cover
+			margin: 0 7px
+
+		.fb_foot
+			background-image: url(../images/social-icon-fb.png)
+
+		.fb_foot:hover
+			background-image: url(../images/social-icon-fb-over.png)
+
+		.rss_foot
+			background-image: url(../images/social-icon-rss.png)
+
+		.rss_foot:hover
+			background-image: url(../images/social-icon-rss-over.png)
+
+		.twit_foot
+			background-image: url(../images/social-icon-twitter.png)
+
+		.twit_foot:hover
+			background-image: url(../images/social-icon-twitter-over.png)
+
+		.link_foot
+			background-image: url(../images/social-icon-linkedin.png)
+
+		.link_foot:hover
+			background-image: url(../images/social-icon-linkedin-over.png)
+
+		.drib_foot
+			background-image: url(../images/social-icon-dribbble.png)
+
+		.drib_foot:hover
+			background-image: url(../images/social-icon-dribbble-over.png)
+	
+	.but-foot
+		display: flex 
+		justify-content: center
+
+		.back-top
+			padding: 12px 16px
+			color: #fff
+			font: 18px "Open Sans", Arial, Helvetice Neue, sans-serif
+			box-sizing: border-box
+
+			background-color: #ff7600
+			border: 1px solid #ff7600
+			border-bottom: 2px solid #d35400
+
+		.back-top:hover 
+			background-color: #d35400
+			border: 1px solid #d35400
+			border-bottom: 2px solid #d35400
+
+	.text-foot
+		display: flex 
+		justify-content: center
+		margin: 50px 0 30px
+		font: 14px "Open Sans", Arial, Helvetice Neue, sans-serif
+		color: #555
+
+		a 
+			color: #428bca
+
+		a:hover
+			text-decoration: underline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bread */
+
+.top
+	width: 100%
+	max-width: 1150px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin: 0 auto 
+
+	.line
+		width: 40.5%
+		height: 2px
+		background-color: lightgray
+	
+	.right_line
+		margin-right: 0.5%
+
+	.left_line
+		margin-left: 0.5%
+
+	.text_team
+		padding-top: 2px
+		width: 18%
+		text-align: center
+		color: #333
+		font: 18px "Open Sans", Arial, Helvetice Neue, sans-serif
+		text-transform: uppercase
