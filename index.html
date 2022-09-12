@@ -3,12 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+	<script src="assets/js/demo.js"></script>
 	<title>Urbanic</title>
 </head>
 <body>
 	
 
-	<section class="header">
+	<section class="header nav_Block" id="home">
 		
 		<header class="communication">
 			
@@ -27,6 +28,8 @@
 
 		</header>
 
+	</section>
+	<section class="header sticky">
 		<header class="main">
 			
 			<div class="name_group">
@@ -36,17 +39,16 @@
 
 			<nav class="nav">
 				
-				<a href="#" class="active">Home</a>
-				<a href="#">About</a>
-				<a href="#">Portfolio</a>
-				<a href="#">Blog</a>
-				<a href="#">External</a>
-				<a href="#">Contact</a>
+				<a data-href="#home" class="active">Home</a>
+				<a data-href="#about">About</a>
+				<a data-href="#portfolio">Portfolio</a>
+				<a data-href="#blog">Blog</a>
+				<!-- <a data-href="#home">External</a> -->
+				<a data-href="#contacts">Contact</a>
 
 			</nav>
 
 		</header>
-
 	</section>
 
 
@@ -55,27 +57,71 @@
 
 		<sidebar class="left">
 			
-
+			<div class="sidebar_block">&#10094;</div>
 
 		</sidebar>
 
 		<article class="welcomeurb">
 
-			<div class="text_welcome">
-				<h1>Welcome to Urbanic</h1>
-				<h3>Choose the one suitable for you</h3>
-			</div>
-
-			<div class="button">
+			<div class="slider_wrapper">
 				
-				<a href="#" class="but_green">View Demo</a>
-				<a href="#" class="but_orange">Free Download</a>
+				<div class="slide" id="slide-1">
+					<div class="text_welcome">
+						<h1>Welcome to Urbanic</h1>
+						<h3>Choose the one suitable for you</h3>
+					</div>
+		
+					<div class="button">
+		
+						<a href="#" class="but_green">View Demo</a>
+						<a href="#" class="but_orange">Free Download</a>
+		
+					</div>
+				</div>
+				
+				<div class="slide" id="slide-2" style="display: none">
+					<div class="text_welcome">
+						<h1>FLUID</h1>
+						<h3>
+							Suspendisse pellentesque, odio vel 
+							ultricies interdum, mauris nulla ullamcorper magna, 
+							non aliquet odio velit aliquam augue.
+						</h3>
+					</div>
+		
+					<div class="text_welcome">
+						<h1>ENERGY</h1>
+						<h3>
+							Class aptent taciti sociosqu ad litora 
+							torquent per conubia nostra, per inceptos himenaeos. 
+							Nullam mattis fringilla urna.
+						</h3>
+					</div>
+				</div>
 
+				<div class="slide" id="slide-3" style="display: none">
+					<div class="text_welcome">
+						<h1>RESPONSIVE LAYOUT</h1>
+						<h3>
+							Urbanic Bootstrap Theme is free 
+							to download and use for your sites.
+							This layout is based on Bootstrap framework.
+						</h3>
+					</div>
+		
+					<div class="button">
+		
+						<a href="#" class="but_orange">Load More</a>
+		
+					</div>
+				</div>
+				
 			</div>
+			
 
 			<ol class="boxs">
 				
-				<li class="active"></li>
+				<li class="slider_active active"></li>
 				<li></li>
 				<li></li>
 
@@ -85,7 +131,7 @@
 
 		<sidebar class="right">
 			
-
+			<div class="sidebar_block">&#10095;</div>
 
 		</sidebar>
 
@@ -156,7 +202,7 @@
 
 
 
-	<section class="our_team">
+	<section class="our_team nav_Block" id="about">
 		
 		<article class="top">
 			
@@ -267,7 +313,7 @@
 
 
 
-	<section class="our_portfolio">
+	<section class="our_portfolio nav_Block" id="portfolio">
 		
 		<article class="top">
 			
@@ -281,27 +327,27 @@
 			
 			<div class="razdel">
 				
-				<a href="#" class="active">All</a><span>/</span>
-				<a href="#">Web Design</a><span>/</span>
-				<a href="#">Graphic</a><span>/</span>
-				<a href="#">Inspiration</a><span>/</span>
-				<a href="#">Creative</a>
+				<a class="chapter_pharagraf active" data-id="all">All</a><span>/</span>
+				<a class="chapter_pharagraf" data-id="web">Web Design</a><span>/</span>
+				<a class="chapter_pharagraf" data-id="graphic">Graphic</a><span>/</span>
+				<a class="chapter_pharagraf" data-id="inspiration">Inspiration</a><span>/</span>
+				<a class="chapter_pharagraf" data-id="creative">Creative</a>
 
 			</div>
 
 			<div class="photos">
 
-				<div class="photo_block tea">
+				<div class="photo_block tea" data-id="graphic">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Graphic</h3>
 						<div class="line-center"></div>
-						<h1>Tea</h1>
+						<h1>Tea Pot</h1>
 					</div>
 				</div>
 
 
-				<div class="photo_block breakfast">
+				<div class="photo_block breakfast" data-id="creative">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Creative</h3>
@@ -310,7 +356,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block green">
+				<div class="photo_block green" data-id="inspiration">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Inspiration</h3>
@@ -319,7 +365,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block camera">
+				<div class="photo_block camera"data-id="web">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Web Design</h3>
@@ -328,7 +374,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block plant">
+				<div class="photo_block plant" data-id="inspiration">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Inspiration</h3>
@@ -337,7 +383,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block train">
+				<div class="photo_block train" data-id="inspiration">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Inspiration</h3>
@@ -346,7 +392,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block city">
+				<div class="photo_block city"data-id="web">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Web Design</h3>
@@ -355,7 +401,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block birds">
+				<div class="photo_block birds" data-id="creative">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Creative</h3>
@@ -364,7 +410,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block nature">
+				<div class="photo_block nature" data-id="graphic">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Graphic</h3>
@@ -373,7 +419,7 @@
 					</div>
 				</div>
 
-				<div class="photo_block doggy">
+				<div class="photo_block doggy" data-id="inspiration">
 					<div class="photo_hover">
 						<div class="dark"></div>
 						<h3>Inspiration</h3>
@@ -392,7 +438,7 @@
 
 
 
-	<section class="blog_post">
+	<section class="blog_post nav_Block" id="blog">
 		
 		<article class="top">
 			
@@ -414,7 +460,7 @@
 						<div>
 
 							<h1>Graphic Design</h1>
-							<p>Posted by : <span>Tracy</span></p>
+							<p>Posted by : <a href="#">Tracy</a></p>
 
 						</div>
 
@@ -437,7 +483,7 @@
 						<div>
 
 							<h1>Website Template</h1>
-							<p>Posted by : <span>Mary</span></p>
+							<p>Posted by : <a href="#">Mary</a></p>
 
 						</div>
 
@@ -460,7 +506,7 @@
 						<div>
 
 							<h1>Web Development</h1>
-							<p>Posted by : <span>Julia</span></p>
+							<p>Posted by : <a href="#">Julia</a></p>
 
 						</div>
 
@@ -483,7 +529,7 @@
 						<div>
 
 							<h1>New Fluid Layout</h1>
-							<p>Posted by : <span>Linda</span></p>
+							<p>Posted by : <a href="#">Linda</a></p>
 
 						</div>
 
@@ -502,7 +548,7 @@
 
 
 
-	<section class="contact">
+	<section class="contact nav_Block" id="contacts">
 		
 		<article class="top">
 			
@@ -619,13 +665,13 @@
 		
 		<div class="but-foot">
 
-			<a href="#" class="back-top">Back To Top</a>
+			<a onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-top">Back To Top</a>
 
 		</div>
 
 		<div class="text-foot">
 			
-			<p>Copyright © 2019 <a href="a">Your Company Name</a> - Designed by Template Mo</p>
+			<p>Copyright © 2019 <a href="#">Your Company Name</a> - Designed by Template Mo</p>
 
 		</div>
 

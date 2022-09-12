@@ -438,11 +438,12 @@ a
 
 			a.active, a:hover
 				color: #e67e22
+				cursor: pointer
 		
 		.photos
 			width: 100%
 			max-width: 1150px
-			margin: 10px auto 0 
+			margin: 10px auto 0
 			display: flex
 			flex-wrap: wrap
 			justify-content: center
@@ -452,6 +453,8 @@ a
 				height: 200px
 				margin: 20px 10px
 				background-repeat: no-repeat
+				transition: opacity .5s linear
+				
 			
 			.tea
 				background-image: url(../images/gallery-image-1.jpg)
@@ -635,7 +638,7 @@ a
 					p 
 						font: 12px "Open Sans", Arial, Helvetice Neue, sans-serif
 						color: #333
-						span 
+						a 
 							color: #e67e22
 
 					.but_orange
