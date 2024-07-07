@@ -104,11 +104,14 @@ a:hover {
   align-items: center;
 }
 .welcome .welcomeurb {
+  position: relative;
   width: 100%;
   max-width: 60%;
-  margin-top: 80px;
+  height: 100%;
   color: #fff;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   overflow: hidden;
 }
@@ -158,6 +161,8 @@ a:hover {
   border-bottom: 2px solid #d35400;
 }
 .welcome .welcomeurb .boxs {
+  position: absolute;
+  bottom: 20px;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -172,7 +177,7 @@ a:hover {
 .welcome .welcomeurb .boxs li:hover {
   cursor: pointer;
 }
-.welcome .welcomeurb .boxs li.active {
+.welcome .welcomeurb .boxs li.slide_active {
   background-color: #fff;
   transform: scale(1.2);
 }
@@ -180,6 +185,12 @@ a:hover {
   width: 100%;
   height: 100%;
   max-width: 15%;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 .welcome sidebar:hover {
   cursor: pointer;
